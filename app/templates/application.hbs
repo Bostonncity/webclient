@@ -1,3 +1,22 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Welcome to Auth0 Ember Simple Auth</h2>
 
+<header>
+  {{#if session.isAuthenticated}}
+    <h5>You are currently logged as: {{session.secure.profile.email}}</h5>
+    <p>
+      Your id is : ${session.secure.profile.user_id}
+    </p>
+    <button {{ action 'invalidateSession' }}>Logout</button>
+  {{else}}
+    <h4>You are currently not logged in.</h4>
+    <button {{ action 'sessionRequiresAuthentication' }}>Login</button>
+  {{/if}}
+</header>
+{{#if session.isAuthenticated}}
+<div class="user-info">
+  <span class="user-info__leader">Hi,</span>
+  <img class="user-info__avatar" src="{{session.secure.profile.picture}}">
+  <span class="user-info__name">{{session.secure.profile.name}}</span>
+</div>
+{{/if}}
 {{outlet}}

@@ -11,6 +11,9 @@
     "ember-resolver": "~0.1.20",
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.4.0",
-    "qunit": "~1.20.0"
+    "qunit": "~1.20.0",
+    "ember-simple-auth": "0.8.0",
+    "auth0-lock": "~7.7.1",
+    "jsrsasign": "~4.8.3"
   }
 }
