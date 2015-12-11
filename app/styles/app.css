@@ -1,0 +1,43 @@
+body{
+  overflow-y: auto;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner > .caption {
+  top: 40%;
+  left: 42%;
+  position: absolute;
+  color: whitesmoke;
+}
+
+.banner > .sub-caption {
+  top: 55%;
+  left: 32%;
+  position: absolute;
+  color: whitesmoke;
+}
+
+.search-input {
+  top: 65%;
+  width: 40%;
+  left: 32%;
+  position: absolute;
+}
+
+.form-control.search-input {
+  border:none;
+  border-bottom: #f2f8fb;
+  color: whitesmoke;
+  font-size: 15px;
+  background: rgba(242, 248, 251, 0.24);
+}
+.input-group-btn .btn  {
+  height: 42px;
+  line-height: 18px;
+  color: whitesmoke;
+  background-color: rgba(242, 248, 251, 0.24);
+  border: none;
+}

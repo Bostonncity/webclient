@@ -1,8 +1,10 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var Funnel = require('broccoli-funnel');
+var Merger = require('broccoli-merge-trees');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
@@ -19,6 +21,20 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import("bower_components/bootstrap/dist/css/bootstrap.min.css");
+  app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
+  app.import("bower_components/flat-ui/dist/css/flat-ui.min.css");
+  app.import("bower_components/flat-ui/dist/js/flat-ui.min.js");
+  app.import("bower_components/font-awesome/css/font-awesome.min.css");
+  var flatUiFonts = new Funnel('bower_components/flat-ui/dist/fonts', {
+    destDir: 'fonts'
+  });
+  var fa = new Funnel('bower_components/font-awesome/fonts', {
+    destDir: 'fonts'
+  });
+  var fui = new Funnel('bower_components/flat-ui/dist/img', {
+    destDir: 'assets/image'
+  });
 
-  return app.toTree();
+  return new Merger([app.toTree(), flatUiFonts, fa, fui]);
 };

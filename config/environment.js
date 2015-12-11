@@ -18,23 +18,23 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-  ENV['simple-auth'] = {
-  authorizer: 'simple-auth-authorizer:jwt',
-  authenticationRoute: 'login',
-  routeAfterAuthentication: 'application',
-  routeIfAlreadyAuthenticated: 'application'
-}
+  ENV['ember-simple-auth'] = {
+    authenticationRoute: 'index',
+    routeAfterAuthentication: 'index',
+    routeIfAlreadyAuthenticated: 'index'
+  };
 
-ENV['auth0-ember-simple-auth'] = {
-  clientID: "08KCdstdTeZoWr0cg7QPTFZNzHDiPm58",
-  domain: "evangelista.auth0.com"
-}
-ENV['contentSecurityPolicy'] = {
-  'font-src': "'self' data: https://cdn.auth0.com",
-  'style-src': "'self' 'unsafe-inline'",
-  'script-src': "'self' 'unsafe-eval' 'unsafe-inline' https://cdn.auth0.com evangelista.auth0.com",
-  'connect-src': "'self' http://localhost:* evangelista.auth0.com"
-};
+  ENV['auth0-ember-simple-auth'] = {
+    clientID: "08KCdstdTeZoWr0cg7QPTFZNzHDiPm58",
+    domain: "evangelista.auth0.com"
+  }
+  ENV['contentSecurityPolicy'] = {
+    'font-src': "'self' data: https://*.auth0.com",
+    'style-src': "'self' 'unsafe-inline'",
+    'script-src': "'self' 'unsafe-eval' https://*.auth0.com",
+    'img-src': '*.gravatar.com *.wp.com data:',
+    'connect-src': "'self' http://localhost:* https://evangelista.auth0.com"
+  };
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
