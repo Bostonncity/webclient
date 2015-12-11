@@ -41,3 +41,7 @@ body{
   background-color: rgba(242, 248, 251, 0.24);
   border: none;
 }
+.logo-image{
+  max-width:100px;
+  margin-top: -7px;
+}

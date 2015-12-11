@@ -27,7 +27,7 @@ module.exports = function(environment) {
   ENV['auth0-ember-simple-auth'] = {
     clientID: "08KCdstdTeZoWr0cg7QPTFZNzHDiPm58",
     domain: "evangelista.auth0.com"
-  }
+  };
   ENV['contentSecurityPolicy'] = {
     'font-src': "'self' data: https://*.auth0.com",
     'style-src': "'self' 'unsafe-inline'",
