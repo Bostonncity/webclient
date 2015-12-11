@@ -4,9 +4,9 @@
     <h1 class="text-center caption">Outdoor</h1>
     <h4 class="text-center sub-caption">An adventure is waiting for you out side</h4>
     <div class="input-group search-input">
-        <input type="text" class="form-control search-input" placeholder="Search for...">
+        {{input type="text" value=searchInput class="form-control search-input" placeholder="Search for..."}}
       <span class="input-group-btn">
-        <button class="btn btn-transparent" type="button">Search <i class="fa fa-search"></i></button>
+        <button class="btn btn-transparent" type="button" {{action 'search'}}>Search <i class="fa fa-search"></i></button>
       </span>
     </div><!-- /input-group -->
 </div>
