@@ -4,9 +4,59 @@
     <h1 class="text-center caption">Outdoor</h1>
     <h4 class="text-center sub-caption">An adventure is waiting for you out side</h4>
     <div class="input-group search-input">
-        {{input type="text" value=searchInput class="form-control search-input" placeholder="Search for..."}}
-      <span class="input-group-btn">
-        <button class="btn btn-transparent" type="button" {{action 'search'}}>Search <i class="fa fa-search"></i></button>
+      {{input type="text" value=searchInput class="form-control search-input" placeholder="Search for..."}}
+        <span class="input-group-btn">
+        <button class="btn btn-transparent" type="button" {{action 'search'}}>Search <i class="fa fa-search"></i>
+        </button>
       </span>
     </div><!-- /input-group -->
+    <span {{ action 'scrollDown'}} class="arrow-button"><i class="fa fa-angle-double-down fa-2x"></i></span>
 </div>
+<div class="container" id="marketing">
+    <hr/>
+    <div class="row clearfix">
+        <div class="col-md-5">
+            <div class="thumbnail">
+                <img src="/images/sky.jpg" class="img-responsive" height="350" alt="">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Sports, trips, walks. <br> <span class="text-muted">Your discovery.</span></h2>
+            <p class="lead">Find new points to do the things you love,
+                be them walking, running, swimming, climbing, you pick, we show.</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row clearfix">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Beautiful places. <br> <span class="text-muted">Must be recorded.</span></h2>
+            <p class="lead">Share your point of view with everyone,
+                showing them what is to be there, inspire them to get their next adventure</p>
+        </div>
+        <div class="col-md-5">
+            <div class="thumbnail">
+                <img src="/images/beach.jpg" class="img-responsive" height="350" alt="">
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row clearfix">
+        <div class="col-md-5">
+            <div class="thumbnail">
+                <img src="/images/mountain.jpg" class="img-responsive" height="350" alt="">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Made for you. <br> <span class="text-muted">By you.</span></h2>
+            <p class="lead">Find new points to do the things you love,
+                be them walking, running, swimming, climbing, you pick, we show.</p>
+        </div>
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+ <p class="footer-text text-muted text-center"><span class="text-danger"><i class="fa fa-heart"></i></span> <a
+         href="https://github.com/joaoevangelista">@joaoevangelista</a></p>
+    </div>
+</footer>

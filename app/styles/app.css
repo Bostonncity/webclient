@@ -1,5 +1,9 @@
-body{
+body {
   overflow-y: auto;
+}
+
+.navbar {
+  margin-bottom: 0;
 }
 
 .banner {
@@ -7,41 +11,71 @@ body{
 }
 
 .banner > .caption {
-  top: 40%;
+  bottom: 60%;
   left: 42%;
   position: absolute;
   color: whitesmoke;
 }
 
 .banner > .sub-caption {
-  top: 55%;
+  bottom: 45%;
   left: 32%;
   position: absolute;
   color: whitesmoke;
 }
 
 .search-input {
-  top: 65%;
+  bottom: 35%;
   width: 40%;
   left: 32%;
   position: absolute;
 }
 
 .form-control.search-input {
-  border:none;
+  border: none;
   border-bottom: #f2f8fb;
   color: whitesmoke;
   font-size: 15px;
   background: rgba(242, 248, 251, 0.24);
 }
-.input-group-btn .btn  {
+
+.input-group-btn .btn {
   height: 42px;
   line-height: 18px;
   color: whitesmoke;
   background-color: rgba(242, 248, 251, 0.24);
   border: none;
 }
-.logo-image{
-  max-width:100px;
+
+.logo-image {
+  max-width: 100px;
   margin-top: -7px;
+}
+
+.arrow-button {
+  color: rgba(242, 248, 251, 0.54);
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  cursor: pointer;
+}
+
+#marketing {
+  margin-top: 2em;
+}
+
+hr {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.thumbnail{
+  padding:0;
+}
+
+.footer-text{
+  padding-top: 7px;
+}
+footer.footer{
+  margin-top: 4em;
 }
