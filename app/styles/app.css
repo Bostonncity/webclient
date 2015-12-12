@@ -69,13 +69,34 @@ hr {
   margin-bottom: 3em;
 }
 
-.thumbnail{
-  padding:0;
+.thumbnail {
+  padding: 0;
 }
 
-.footer-text{
+.footer-text {
   padding-top: 7px;
 }
-footer.footer{
+
+footer.footer {
   margin-top: 4em;
+}
+
+.item-wrapper {
+  margin-top: 2em;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 0;
+  border-radius: 6px;
+  padding: 0 4px 10px 4px;
+}
+
+.item-header-image {
+  height: 80px;
+  width: 100%;
+}
+
+.col-md-6.item-wrapper{
+  padding-left: 0;
+  padding-right: 0;
+}
+.place-item:last-child{
+  margin-bottom: 1em;
 }

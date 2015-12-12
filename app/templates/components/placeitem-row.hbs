@@ -1,0 +1,13 @@
+<div class="place-item text-center">
+    <div class="row clearfix">
+        <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-3 item-wrapper">
+            <img class="item-header-image" src="/images/banner.jpg"
+                 height="50px" alt="header image">
+            <h4>{{place.name}}</h4>
+            <p class="">{{place.description}}</p>
+          {{#each place.activities as |activity|}}
+              <small><span class="badge text-inverse">{{activity.name}}</span></small>
+          {{/each}}
+        </div>
+    </div>
+</div>
