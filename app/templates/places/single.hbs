@@ -1,3 +1,5 @@
+{{nav-bar}}
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -12,13 +14,13 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <p class="lead">
+      <p class="text-center lead">
         {{model.description}}
       </p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="text-center col-md-12">
       {{#each model.activities as |activity|}}
         <span class="tag label label-info">{{activity.name}}</span>
       {{/each}}
