@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- image gallery -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">{{model.name}}</h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="lead">
+        {{model.description}}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{#each model.activities as |activity|}}
+        <span class="tag label label-info">{{activity.name}}</span>
+      {{/each}}
+    </div>
+  </div>
+</div>
